@@ -1,0 +1,89 @@
+body {
+    background-image: url("snake game.webp"); /* or url("snake%20game.webp") */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#title {
+    font-size: 55px;
+    font-family: "Permanent Marker", cursive;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57vh;
+    width: 100%;
+}
+
+#gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    border: 5px solid black;
+    border-radius: 3%;
+    transition: background 0.2s;
+}
+
+#gameboard:hover {
+    border-color: mediumspringgreen;
+}
+
+.score{
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.controls,button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+button{
+    border: 3% solid black;
+    border-radius: 15%;
+    transition: background 0.2s;
+}
+
+button:hover{
+    color: mediumspringgreen;
+    background-color: black;
+    border-color: mediumspringgreen;
+}
+
+@media (max-width: 600px ) {
+    #title {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+    #gameboard {
+        width: 95vw;
+        height: 95vw;
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .score {
+        font-size: 1.2rem;
+    }
+    .controls {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
